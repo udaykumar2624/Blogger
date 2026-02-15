@@ -43,23 +43,6 @@ Backend
 📁 JSON file as database
 
 
-📁 Project Structure
-blog-project/
-│
-├── backend/
-│   ├── server.js
-│   ├── blogs.json
-│
-├── frontend/
-│   ├── src/
-│   │   ├── pages/
-│   │   ├── style/
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │
-│   └── package.json
-│
-└── README.md
 
 
 2️⃣ Backend Setup
