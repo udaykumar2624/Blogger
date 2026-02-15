@@ -42,7 +42,10 @@ Backend
 
 📁 JSON file as database
 
+
+
 📁 Project Structure
+
 blog-project/
 │
 ├── backend/
@@ -60,13 +63,20 @@ blog-project/
 │
 └── README.md
 
+
 ⚙️ Installation & Setup
+
+
 1️⃣ Clone the Repository
+
 git clone https://github.com/your-username/react-blog-app.git
 
 2️⃣ Backend Setup
+
 cd backend
+
 npm install
+
 node server.js
 
 
@@ -75,8 +85,11 @@ Backend will run on:
 http://localhost:5000
 
 3️⃣ Frontend Setup
+
 cd frontend
+
 npm install
+
 npm run dev
 
 
