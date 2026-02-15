@@ -47,20 +47,35 @@ Backend
 📁 Project Structure
 
 blog-project/
+
 │
+
 ├── backend/
+
 │   ├── server.js
+
 │   ├── blogs.json
+
 │
+
 ├── frontend/
-│   ├── src/
-│   │   ├── components/
+
+│   ├── src
+
 │   │   ├── pages/
+
+│   │   ├── style/
+
 │   │   ├── App.jsx
+
 │   │   ├── main.jsx
+
 │   │
+
 │   └── package.json
+
 │
+
 └── README.md
 
 
