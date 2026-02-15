@@ -1,0 +1,50 @@
+/* Main blog detail container */
+.blog-details-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Blog title */
+.blog-details-container h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  word-wrap: break-word;
+}
+
+/* Blog content paragraph */
+.blog-details-container p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+
+  /*  CRITICAL FIX FOR OVERFLOW */
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  white-space: normal;
+}
+
+/* Image safety */
+.blog-details-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px 0;
+}
+
+/* Code / pre safety (if blog has code) */
+.blog-details-container pre,
+.blog-details-container code {
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: #f6f6f6;
+  padding: 10px;
+  border-radius: 5px;
+}
