@@ -39,7 +39,7 @@ app.post("/blogs", (req, res) => {
     ...req.body
   };     
   blogs.push(newBlog);//adding the new blog to the list of blogs
-  writeBlogs(blogs);// sving the updated list of blogs to the file 
+  writeBlogs(blogs);// saving the updated list of blogs to the file 
   res.status(201).json(newBlog);
 });
 
