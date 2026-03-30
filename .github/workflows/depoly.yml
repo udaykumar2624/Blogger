@@ -20,7 +20,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.SSH_KEY }}
           script: |
-             cd /home/ubuntu
+            cd /home/ubuntu
 
             if [ ! -d "Blogger" ]; then
                 git clone https://github.com/udaykumar2624/Blogger.git
