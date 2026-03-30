@@ -23,9 +23,11 @@ jobs:
              cd /home/ubuntu
 
             if [ ! -d "Blogger" ]; then
-                git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git Blogger
+                git clone https://github.com/udaykumar2624/Blogger.git
             fi
 
             cd Blogger
+            git pull origin main
             docker compose down
             docker compose up -d --build
+
