@@ -17,10 +17,10 @@ jobs:
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SSH_HOST }}
-          username: root
+          username: ubuntu
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd /root/Shramic_community_webapplication
             git pull origin master
+            cd /home/ubuntu/Blogger
             docker compose down
             docker compose up -d --build
