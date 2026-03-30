@@ -20,7 +20,12 @@ jobs:
           username: ubuntu
           key: ${{ secrets.SSH_KEY }}
           script: |
-            git pull origin master
-            cd /home/ubuntu/Blogger
+             cd /home/ubuntu
+
+            if [ ! -d "Blogger" ]; then
+                git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git Blogger
+            fi
+
+            cd Blogger
             docker compose down
             docker compose up -d --build
