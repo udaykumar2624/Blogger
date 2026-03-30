@@ -1,0 +1,26 @@
+name: Deploy Shramic Community Web Application
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest   # ✅ IMPORTANT
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: root
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            cd /root/Shramic_community_webapplication
+            git pull origin master
+            docker compose down
+            docker compose up -d --build

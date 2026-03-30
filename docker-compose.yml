@@ -10,7 +10,7 @@ services:
     restart: always
 
   frontend:
-    build: ./frontend
+    build: ./blog_demo
     ports:
       - "3000:80"
     depends_on:
