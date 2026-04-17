@@ -23,6 +23,6 @@ jobs:
 
             git clone https://github.com/udaykumar2624/Blogger.git
             cd Blogger
-            docker system prune -a
+            docker system prune -a -f
             docker compose up -d --build
 
